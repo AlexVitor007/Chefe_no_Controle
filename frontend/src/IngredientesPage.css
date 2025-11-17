@@ -1,0 +1,135 @@
+:root{
+    --green1: #0f7a17;
+    --green2: #cfe8d8;
+    --card: rgba(255,255,255,0.75);
+    --red: #c32828;
+}
+
+.page{
+    display:flex;
+    height:100vh;
+    background: linear-gradient(180deg, #0b6b12 0%, #83b685 30%, #dfeae2 100%);
+}
+
+.sidebar{
+    width:64px;
+    background: rgba(255,255,255,0.06);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-top:12px;
+    transition:width .3s ease;
+    overflow:hidden;
+    box-shadow:2px 0 8px rgba(0,0,0,0.25);
+}
+.sidebar.expanded{
+    width:180px;
+}
+.menu-toggle{
+    cursor:pointer;
+    color:white;
+    font-size:22px;
+}
+.logo{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+.icons{
+    margin-top:auto;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    width:100%;
+    padding-left:10px;
+}
+.icon{
+    width:44px;
+    height:44px;
+    background:rgba(255,255,255,0.08);
+    display:flex;
+    align-items:center;
+    border-radius:10px;
+    gap:12px;
+    padding-left:10px;
+    cursor:pointer;
+    transition:.2s;
+}
+.sidebar.expanded .icon{
+    width:140px;
+}
+
+.content-ingredientes{
+    flex:1;
+    padding:20px 40px;
+    overflow-y:auto;
+}
+
+/* Barra superior */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transform:translateY(-10px);
+}
+.search input{
+    width:400px;
+    padding:10px 15px;
+    border-radius:24px;
+    border:none;
+    outline:none;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2) inset;
+}
+.avatar img{
+    width:48px;
+    border-radius:10px;
+}
+
+/* Seção principal */
+.ingredientes-container{
+    margin-top:20px;
+    padding-bottom:40px;
+}
+
+.categoria-card{
+    background:var(--card);
+    padding:18px;
+    border-radius:18px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+    margin-bottom:25px;
+}
+
+.categoria-titulo{
+    margin:0 0 14px 0;
+    color:#003000;
+    font-size:20px;
+}
+
+.grid-ingredientes{
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(140px, 1fr));
+    gap:12px;
+}
+
+.item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    background:white;
+    padding:8px 12px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.12);
+}
+
+.btn-enviar{
+    margin-top:20px;
+    width:100%;
+    padding:14px;
+    background:var(--red);
+    color:white;
+    font-size:18px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    box-shadow:0 6px 12px rgba(0,0,0,0.2);
+}

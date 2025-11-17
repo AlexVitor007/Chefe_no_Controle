@@ -1,0 +1,151 @@
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+  min-height: 100vh;
+  background: linear-gradient(to bottom, #2f8f2f, #d8f5d8);
+  font-family: "Inter", sans-serif;
+}
+
+
+.back-btn {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+  background: #b90101;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #8f0000;
+}
+
+
+.profile-card {
+  width: 820px;
+  background: rgba(255, 255, 255, 0.65);
+  border-radius: 18px;
+  padding: 30px 40px;
+  border: 1px solid rgba(0,0,0,0.15);
+  display: flex;
+  gap: 30px;
+}
+
+
+.left {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-avatar {
+  width: 145px;
+  height: 145px;
+  border-radius: 50%;
+  border: 4px solid white;
+  outline: 4px solid #2f8f2f;
+  object-fit: cover;
+}
+
+
+.right {
+  flex: 1;
+}
+
+
+.profile-name {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+  color: #1b471b;
+}
+
+
+.profile-field {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+
+.field-left .muted {
+  color: #8a8a8a;
+  font-size: 13px;
+  margin: 0;
+}
+
+.email-text {
+  color: #5e5e5e;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+.field-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field-right input {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 180px;
+}
+
+
+.small-red,
+.fav-btn {
+  background: #b90101;
+  color: white;
+  border: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.small-red:hover,
+.fav-btn:hover {
+  background: #8f0000;
+}
+
+
+.fav-section {
+  margin-top: 25px;
+}
+
+.fav-btn {
+  font-size: 14px;
+}
+
+.fav-list {
+  margin-top: 18px;
+}
+
+.fav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.fav-item img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fav-item p {
+  font-size: 14px;
+  color: #333;
+}

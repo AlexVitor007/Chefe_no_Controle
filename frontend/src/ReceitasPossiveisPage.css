@@ -1,0 +1,165 @@
+/* Reuso das variáveis */
+:root {
+    --green1: #0f7a17;
+    --green2: #cfe8d8;
+    --card: rgba(255,255,255,0.75);
+    --red: #c32828;
+}
+
+
+.titulo-receitas {
+    text-align: center;
+    color: #ffffff;
+    font-size: 32px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+
+.receitas-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 22px;
+    padding-bottom: 40px;
+}
+
+
+.receita-card {
+    background: var(--card);
+    border-radius: 18px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: transform .2s;
+}
+
+.receita-card:hover {
+    transform: scale(1.03);
+}
+
+
+.receita-img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+
+.receita-nome {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #003000;
+}
+
+
+.receita-original {
+    font-size: 13px;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+
+.receita-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--red);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.receita-btn:hover {
+    background: #a91f1f;
+}
+
+.sidebar{
+  width:64px;
+  background: rgba(255,255,255,0.06);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top: 12px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar.expanded {
+  width: 180px;
+}
+
+.top-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  font-size: 22px;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+.menu-toggle:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.logo-section {
+  margin: 16px 0 24px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.icons{
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.icon {
+  background: rgba(255, 255, 255, 0.08);
+  color: #5b5858;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background: rgba(255, 255, 255, 0.2);
+  color: #3c5341; 
+}
+
+.icon-label {
+  color: #312e2e;
+  font-size: 15px;
+  white-space: nowrap;
+  opacity: 1;
+}
+
+.sidebar.expanded .icon {
+  width: 140px;
+}

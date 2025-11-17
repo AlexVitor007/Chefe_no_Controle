@@ -1,0 +1,163 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root > * {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.logo, .avatar{
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ======== TELA INICIAL (HOME) ======== */
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #0b6a1b 0%, #bce0b7 40%, #f5f8f3 100%);
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+}
+
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+}
+
+.home-logo {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home-login-area {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.home-question {
+  font-size: 13px;
+  color: #333;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.home-btn-outline,
+.home-btn-filled {
+  padding: 10px 22px;
+  border-radius: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.home-btn-outline {
+  background: transparent;
+  border: 1px solid #0b6a1b;
+  color: #dcffe2;
+}
+
+.home-btn-outline:hover {
+  background: #0b6a1b;
+  color: white;
+}
+
+.home-btn-filled {
+  background: #0b6a1b;
+  border: 1px solid #0b6a1b;
+  color: white;
+}
+
+.home-btn-filled:hover {
+  background: #0d7a21;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.home-title {
+  font-size: 2.4rem;
+  line-height: 1.4;
+  font-weight: 800;
+  color: #000;
+  max-width: 800px;
+}
+
+.highlight-green {
+  color: #0b6a1b;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.home-subtitle {
+  font-size: 18px;
+  margin-top: 30px;
+  color: #222;
+}
+
+.home-big-btn {
+  margin-top: 50px;
+  background: #0b6a1b;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 48px;
+  border-radius: 45px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.home-big-btn:hover {
+  background: #0e8a25;
+  transform: translateY(-3px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
